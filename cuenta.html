@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"content="width=device-width,initial-scale=1.0" />
+  <title>LMC Bank – Abrir Cuenta</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Barra y nav -->
+  <div class="top-bar">
+    <div class="container">
+      <a href="tel:+51999999999"><i class="material-icons">phone</i>+51 999 999 999</a> | 
+      <a href="#">Contacto</a> | <a href="#">ES</a>
+    </div>
+  </div>
+<header>
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Logo LMC Bank">
+    </a>
+
+    <!-- Checkbox toggle oculto -->
+    <input type="checkbox" id="nav-toggle" />
+
+    <!-- Label que se ve como botón hamburguesa -->
+    <label for="nav-toggle" class="nav-toggle-label">
+      <i class="material-icons">menu</i>
+    </label>
+
+    <!-- Tu menú de navegación -->
+    <nav class="header-nav">
+      <a href="index.html">Inicio</a>
+      <a href="cuenta.html">Abrir Cuenta</a>
+      <a href="login.html">Iniciar Sesión</a>
+      <a href="help.html">Ayuda</a>
+      <a href="reclamaciones.html">Reclamaciones</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero + Formulario -->
+  <section class="hero" style="background-image:url('account-hero.jpg')">
+    <div class="account-section container">
+      <h1><i class="material-icons">eco</i>Creemos en ti,<br>haz crecer tu futuro.</h1>
+      <aside class="form-card">
+        <h2><i class="material-icons">account_box</i>Apertura de Cuenta</h2>
+        <!-- Progreso (3 pasos) -->
+        <div class="progress-bar">
+          <div class="step active">1</div>
+          <div class="step">2</div>
+          <div class="step">3</div>
+        </div>
+        <form>
+          <fieldset>
+            <legend>Datos Personales</legend>
+            <label>Documento<br>
+              <select name="tipo_doc">
+                <option>DNI</option>
+                <option>Carné Ext.</option>
+              </select>
+            </label>
+            <label>Número<br>
+              <input type="text" placeholder="Ingrese número" required>
+            </label>
+            <label>Nombres<br>
+              <input type="text" placeholder="Nombres" required>
+            </label>
+            <label>Apellidos<br>
+              <input type="text" placeholder="Apellidos" required>
+            </label>
+            <label>Fecha Nac.<br>
+              <div class="date-group">
+                <input type="text" placeholder="DD" maxlength="2">
+                <span>/</span>
+                <input type="text" placeholder="MM" maxlength="2">
+                <span>/</span>
+                <input type="text" placeholder="YYYY" maxlength="4">
+                <i class="material-icons">calendar_today</i>
+              </div>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Contacto</legend>
+            <label>Email<br><input type="email" placeholder="Correo electrónico" required></label>
+            <label>Dirección<br><input type="text" placeholder="Domicilio completo" required></label>
+          </fieldset>
+
+          <button type="submit" class="btn">
+            <i class="material-icons">arrow_forward</i>Siguiente
+          </button>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <!-- mismo footer -->
+      <div>
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="cuenta.html">Abrir Cuenta</a></li>
+          <li><a href="login.html">Iniciar Sesión</a></li>
+          <li><a href="help.html">Ayuda</a></li>
+          <li><a href="reclamaciones.html">Reclamaciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p><i class="material-icons">phone</i> +51 999 999 999</p>
+        <p><i class="material-icons">email</i> apertura@lmcbank.pe</p>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#"><i class="material-icons">facebook</i></a>
+          <a href="#"><i class="material-icons">twitter</i></a>
+          <a href="#"><i class="material-icons">instagram</i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

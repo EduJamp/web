@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>LMC Bank – Centro de Ayuda</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra y nav -->
+  <div class="top-bar">
+    <div class="container">
+      <a href="tel:+51999999999"><i class="material-icons">phone</i>+51 999 999 999</a> | 
+      <a href="#">Contacto</a> | <a href="#">ES</a>
+    </div>
+  </div>
+<header>
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Logo LMC Bank">
+    </a>
+
+    <!-- Checkbox toggle oculto -->
+    <input type="checkbox" id="nav-toggle" />
+
+    <!-- Label que se ve como botón hamburguesa -->
+    <label for="nav-toggle" class="nav-toggle-label">
+      <i class="material-icons">menu</i>
+    </label>
+
+    <!-- Tu menú de navegación -->
+    <nav class="header-nav">
+      <a href="index.html">Inicio</a>
+      <a href="cuenta.html">Abrir Cuenta</a>
+      <a href="login.html">Iniciar Sesión</a>
+      <a href="help.html">Ayuda</a>
+      <a href="reclamaciones.html">Reclamaciones</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Título y formulario -->
+  <section class="about container">
+    <h2><i class="material-icons">support_agent</i>Centro de Ayuda</h2>
+    <p>¿Tienes dudas? Escribe tu consulta y te responderemos a la brevedad.</p>
+  </section>
+
+  <div class="help-container">
+    <div class="help-form">
+      <form>
+        <fieldset>
+          <legend>Tipo de documento</legend>
+          <label><input type="radio" name="tipo_doc" checked> DNI</label>
+          <label><input type="radio" name="tipo_doc"> Carné Ext.</label>
+        </fieldset>
+        <label>Documento<br><input type="text" placeholder="Número de doc." required></label>
+        <label>Teléfono<br><input type="tel" placeholder="+51 9xx xxx xxx" required></label>
+        <label>Consulta<br><textarea rows="3" placeholder="Escribe tu mensaje" required></textarea></label>
+        <button class="btn"><i class="material-icons">send</i>Enviar</button>
+        <p>Te contactaremos en breve.</p>
+      </form>
+    </div>
+    <div class="help-info">
+      <h3><i class="material-icons">call</i> Si no ves respuesta, llama al:</h3>
+      <strong>+51 999 999 999</strong>
+      <img src="img_2.jpeg" alt="Soporte">
+    </div>
+  </div>
+
+  <!-- FAQ rápido -->
+  <section class="container">
+    <h2><i class="material-icons">help</i>Preguntas Frecuentes</h2>
+    <details>
+      <summary>¿Cómo restablezco mi contraseña?</summary>
+      <p>Haz clic en “Olvidé mi contraseña” en la página de login y sigue los pasos.</p>
+    </details>
+    <details>
+      <summary>¿Cuánto demora la aprobación de cuenta?</summary>
+      <p>Generalmente entre 24–48 horas hábiles tras enviar tus documentos.</p>
+    </details>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <!-- footer idéntico -->
+      <div>
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cuenta.html">Abrir Cuenta</a></li>
+          <li><a href="login.html">Iniciar Sesión</a></li>
+          <li><a class="active" href="help.html">Ayuda</a></li>
+          <li><a href="reclamaciones.html">Reclamaciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p><i class="material-icons">phone</i> +51 999 999 999</p>
+        <p><i class="material-icons">email</i> ayuda@lmcbank.pe</p>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#"><i class="material-icons">facebook</i></a>
+          <a href="#"><i class="material-icons">twitter</i></a>
+          <a href="#"><i class="material-icons">instagram</i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
