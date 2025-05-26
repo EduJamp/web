@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>LMC Bank – Iniciar Sesión</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra y nav idénticos al landing -->
+  <div class="top-bar">
+    <div class="container">
+      <a href="tel:+51999999999"><i class="material-icons">phone</i>+51 999 999 999</a> | 
+      <a href="#">Contacto</a> | <a href="#">ES</a>
+    </div>
+  </div>
+<header>
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Logo LMC Bank">
+    </a>
+
+    <!-- Checkbox toggle oculto -->
+    <input type="checkbox" id="nav-toggle" />
+
+    <!-- Label que se ve como botón hamburguesa -->
+    <label for="nav-toggle" class="nav-toggle-label">
+      <i class="material-icons">menu</i>
+    </label>
+
+    <!-- Tu menú de navegación -->
+    <nav class="header-nav">
+      <a href="index.html">Inicio</a>
+      <a href="cuenta.html">Abrir Cuenta</a>
+      <a href="login.html">Iniciar Sesión</a>
+      <a href="help.html">Ayuda</a>
+      <a href="reclamaciones.html">Reclamaciones</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero login-hero">
+  <div class="container login-hero-grid">
+    <aside class="login-card drop-in">
+      <h2><i class="material-icons">login</i>Iniciar Sesión</h2>
+      <form>
+        <label>Documento<br>
+          <select name="tipo_doc">
+            <option>DNI</option>
+            <option>Carné Extranjería</option>
+          </select>
+        </label>
+
+        <label>Número de Documento<br>
+          <input type="text" placeholder="Ingrese su número" required>
+        </label>
+
+        <label>Usuario<br>
+          <input type="text" placeholder="Ingrese su usuario" required>
+        </label>
+
+        <div class="password-wrapper">
+          <label>Contraseña<br>
+            <input type="password" placeholder="••••••••" required>
+          </label>
+          <i class="material-icons">visibility_off</i>
+        </div>
+
+        <button class="btn"><i class="material-icons">arrow_forward</i>Ingresar</button>
+        <p class="text-center">
+          <a href="#">¿Olvidaste tu contraseña?</a> |
+          <a href="cuenta.html">Crear cuenta</a>
+        </p>
+      </form>
+    </aside>
+
+    <div class="login-illustration image-container">
+      <img src="img_login.jpeg" alt="Ilustración Login" class="responsive-img">
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="container footer-grid">
+      <!-- mismo footer que landing -->
+      <div>
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cuenta.html">Abrir Cuenta</a></li>
+          <li><a class="active" href="login.html">Iniciar Sesión</a></li>
+          <li><a href="help.html">Ayuda</a></li>
+          <li><a href="reclamaciones.html">Reclamaciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p><i class="material-icons">phone</i> +51 999 999 999</p>
+        <p><i class="material-icons">email</i> soporte@lmcbank.pe</p>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#"><i class="material-icons">facebook</i></a>
+          <a href="#"><i class="material-icons">twitter</i></a>
+          <a href="#"><i class="material-icons">instagram</i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
